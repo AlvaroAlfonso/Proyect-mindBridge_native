@@ -10,10 +10,8 @@ Landing page desarrollada para un servicio de psicología, orientada a evaluar e
 Mi aporte <br>
 Desarrollé la interfaz frontend y la lógica de interacción de la landing page, integrando un agente de inteligencia artificial capaz de procesar las respuestas del usuario y generar una evaluación básica del estado de ánimo. Me enfoqué en la claridad de la experiencia, el flujo de preguntas y la correcta comunicación de resultados al usuario. <br>
 <br>
-
 Tecnologías utilizadas <br>
 HTML, CSS, JavaScript, APIs REST, Integración de IA, UX/UI<br>
 <br>
-
 Resultado / Aprendizaje<br>
 Este proyecto fortaleció mi experiencia en la integración de servicios inteligentes dentro de aplicaciones frontend, así como el diseño de flujos conversacionales y experiencias orientadas al usuario, combinando lógica, diseño y funcionalidad.<br>
