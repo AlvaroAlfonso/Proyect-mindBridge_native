@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registrarse - MindBridge</title>
+    <!--Nunito-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!--Open Sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <!--css-->
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body>
+    <!--HEADER-->
+    <header>
+      <!--mini header-->
+      <section class="mini-header">
+        <span class="mini-header-text"
+          >¿Quieres ser o ya eres uno de nuestros psicólogos?
+        </span>
+        <a href="/pages/registrarse.html">registrarse</a>
+        <a href="/pages/ingresar.html">ingresar</a>
+        <a href="/pages/admin-view/admin-intro.html">+</a>
+      </section>
+
+      <!--header principal-->
+      <section class="header">
+        <img
+          class="logo"
+          src="/images/principal-page/logo-png.png"
+          alt="MindBridge logo"
+        />
+        <nav class="navbar">
+          <input type="checkbox" id="menu-toogle" />
+          <label for="menu-toogle" class="menu-icon">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </label>
+          <ul class="header-links">
+            <li><a href="/index.html">inicio</a></li>
+            <li><a href="/index.html#nosotros">nosotros</a></li>
+            <li>
+              <a href="/index.html#centro-de-recursos">centro de recursos</a>
+            </li>
+            <li><a href="/index.html#calma-bot">calma bot</a></li>
+            <li>
+              <a href="/pages/psicologos.html">psicólogos para ti</a>
+            </li>
+            <li><a href="/index.html#lecturas">lecturas</a></li>
+            <li>
+              <a href="/index.html#psicologos-unidos">psicólogos unidos</a>
+            </li>
+            <li><a href="/pages/questions.html">Q&A</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+
+    <main class="registrar-main" id="main-content">
+      <section class="auth-main">
+        <!--MIGAS DE PAN-->
+        <section class="migas-pan">
+          <div class="migas-container">
+            <a href="/index.html">página principal</a>
+            <span>></span>
+            <a href="./registrarse.html">Registrarse</a>
+          </div>
+        </section>
+
+        <!-- Accessibility Toolbar -->
+        <section class="accessibility-toolbar" aria-label="Accesibilidad">
+          <input
+            type="radio"
+            name="font-size"
+            id="size-small"
+            class="sr-only"
+          />
+          <input
+            type="radio"
+            name="font-size"
+            id="size-normal"
+            class="sr-only"
+            checked
+          />
+          <input
+            type="radio"
+            name="font-size"
+            id="size-large"
+            class="sr-only"
+          />
+          <input type="checkbox" id="high-contrast" class="sr-only" />
+          <div class="accessibility-controls">
+            <label
+              for="size-small"
+              class="acc-btn"
+              title="Disminuir letra"
+              aria-label="Disminuir letra"
+              >A-</label
+            >
+            <label
+              for="size-large"
+              class="acc-btn"
+              title="Aumentar letra"
+              aria-label="Aumentar letra"
+              >A+</label
+            >
+            <label
+              for="high-contrast"
+              class="acc-btn contrast"
+              title="Contraste"
+              aria-label="Cambiar contraste"
+            >
+              <span class="icon-sun" aria-hidden="true">☀️</span>
+              <span class="icon-moon" aria-hidden="true">🌙</span>
+            </label>
+          </div>
+        </section>
+
+        <div class="auth-container">
+          <div class="auth-card">
+            <div class="auth-header">
+              <div class="auth-icon">
+                <svg
+                  width="60"
+                  height="60"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M16 21V19C16 17.9391 15.5786 16.9217 14.8284 16.1716C14.0783 15.4214 13.0609 15 12 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21"
+                    stroke="#EEC767"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <circle
+                    cx="8.5"
+                    cy="7"
+                    r="4"
+                    stroke="#EEC767"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M20 8V14"
+                    stroke="#EEC767"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M23 11H17"
+                    stroke="#EEC767"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </div>
+              <h1>Únete a MindBridge</h1>
+              <p>
+                Crea tu cuenta y comienza tu camino hacia el bienestar mental
+              </p>
+            </div>
+
+            <form id="registerForm" class="auth-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="nombre">Nombre completo</label>
+                  <input
+                    type="text"
+                    id="nombre"
+                    name="nombre_usuario"
+                    placeholder="Tu nombre completo"
+                    required
+                    minlength="2"
+                    autocomplete="name"
+                  />
+                  <div class="msg msg-error">
+                    El nombre debe tener al menos 2 caracteres
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="email">Correo electrónico</label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email_usuario"
+                    placeholder="tu@email.com"
+                    required
+                    autocomplete="email"
+                  />
+                  <div class="msg msg-error">
+                    Por favor ingresa un email válido
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="telefono">Teléfono (opcional)</label>
+                  <input
+                    type="tel"
+                    id="telefono"
+                    name="telefono_usuario"
+                    placeholder="+57 300 123 4567"
+                    autocomplete="tel"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="fecha_nacimiento"
+                    >Fecha de nacimiento (opcional)</label
+                  >
+                  <input
+                    type="date"
+                    id="fecha_nacimiento"
+                    name="fecha_nacimiento"
+                  />
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="tipo_usuario_id">Tipo de usuario</label>
+                  <select id="tipo_usuario_id" name="tipo_usuario_id" required>
+                    <option value="2" selected>Paciente</option>
+                    <option value="1">Psicólogo</option>
+                    <option value="3">Administrador</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label for="genero">Género (opcional)</label>
+                  <select id="genero" name="genero_usuario">
+                    <option value="prefiero_no_decir">Prefiero no decir</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="femenino">Femenino</option>
+                    <option value="otro">Otro</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="password">Contraseña</label>
+                  <div class="password-input">
+                    <input
+                      type="password"
+                      id="password"
+                      name="contraseña_usuario"
+                      placeholder="Mínimo 8 caracteres"
+                      required
+                      minlength="8"
+                      autocomplete="new-password"
+                    />
+                    <button
+                      type="button"
+                      class="toggle-password"
+                      onclick="togglePassword('password')"
+                    >
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 12S5 4 12 4S23 12 23 12S19 20 12 20S1 12 1 12Z"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <circle
+                          cx="12"
+                          cy="12"
+                          r="3"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="msg msg-error">
+                    La contraseña debe tener al menos 8 caracteres
+                  </div>
+                  <div class="password-strength">
+                    <div class="strength-bar">
+                      <div class="strength-fill"></div>
+                    </div>
+                    <span class="strength-text">Ingresa una contraseña</span>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="confirm_password">Confirmar contraseña</label>
+                  <div class="password-input">
+                    <input
+                      type="password"
+                      id="confirm_password"
+                      name="confirmar_contraseña"
+                      placeholder="Repite tu contraseña"
+                      required
+                      autocomplete="new-password"
+                    />
+                    <button
+                      type="button"
+                      class="toggle-password"
+                      onclick="togglePassword('confirm_password')"
+                    >
+                      <svg
+                        width="20"
+                        height="20"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        xmlns="http://www.w3.org/2000/svg"
+                      >
+                        <path
+                          d="M1 12S5 4 12 4S23 12 23 12S19 20 12 20S1 12 1 12Z"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                        <circle
+                          cx="12"
+                          cy="12"
+                          r="3"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                        />
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="msg msg-error">Las contraseñas no coinciden</div>
+                </div>
+              </div>
+
+              <button type="submit" class="btn-auth btn-primary">
+                <span class="btn-text">Crear Cuenta</span>
+                <div class="btn-loading" style="display: none">
+                  <div class="spinner"></div>
+                  Creando cuenta...
+                </div>
+              </button>
+            </form>
+
+            <div class="auth-divider">
+              <span> </span>
+            </div>
+
+            <div class="auth-footer">
+              <p>
+                ¿Ya tienes una cuenta?
+                <a href="/pages/ingresar.html" class="auth-link"
+                  >Inicia sesión aquí</a
+                >
+              </p>
+            </div>
+          </div>
+
+          <div class="auth-info">
+            <div class="info-content">
+              <h2>Comienza tu viaje hacia el bienestar</h2>
+              <p>
+                Únete a nuestra comunidad y accede a profesionales de la
+                psicología, recursos gratuitos y herramientas para cuidar tu
+                salud mental.
+              </p>
+
+              <div class="info-features">
+                <div class="feature">
+                  <div class="feature-icon">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M9 12L11 14L15 10"
+                        stroke="#EEC767"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+                        stroke="#EEC767"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <div class="feature-text">
+                    <h3>Registro gratuito</h3>
+                    <p>
+                      Crear tu cuenta es completamente gratis y sin compromisos
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature">
+                  <div class="feature-icon">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 22C17.5228 22 22 17.5228 22 12C22 6.47715 17.5228 2 12 2C6.47715 2 2 6.47715 2 12C2 17.5228 6.47715 22 12 22Z"
+                        stroke="#EEC767"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M8 14S9.5 16 12 16S16 14 16 14"
+                        stroke="#EEC767"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <line
+                        x1="9"
+                        y1="9"
+                        x2="9.01"
+                        y2="9"
+                        stroke="#EEC767"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <line
+                        x1="15"
+                        y1="9"
+                        x2="15.01"
+                        y2="9"
+                        stroke="#EEC767"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <div class="feature-text">
+                    <h3>Comunidad de apoyo</h3>
+                    <p>
+                      Conecta con otros usuarios y profesionales de la salud
+                      mental
+                    </p>
+                  </div>
+                </div>
+
+                <div class="feature">
+                  <div class="feature-icon">
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M12 2L2 7L12 12L22 7L12 2Z"
+                        stroke="#EEC767"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M2 17L12 22L22 17"
+                        stroke="#EEC767"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                      <path
+                        d="M2 12L12 17L22 12"
+                        stroke="#EEC767"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <div class="feature-text">
+                    <h3>Recursos personalizados</h3>
+                    <p>
+                      Accede a contenido y herramientas adaptadas a tus
+                      necesidades
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h4>Datos de contacto</h4>
+                <p>Cra. 33A #30-20, Bogotá</p>
+                <p>(1) 234 5678</p>
+                <p>+57 3137737015</p>
+                <p>gestorprincipal@mindbridge.com</p>
+            </div>
+            <div class="footer-column">
+                <h4>Atajos</h4>
+                <ul>
+                    <li><a href="/pages/servicios.html">Centro de recursos</a></li>
+                    <li><a href="/pages/psicologos.html">Psicólogos para ti</a></li>
+                    <li><a href="./psicologos-unidos.html">Psicólogos unidos</a></li>
+                    <li><a href="/pages/questions.html">Preguntas frecuentes</a></li>
+                    <li>
+                        <a href="/pages/ingresar.html">Iniciar sesión</a>
+                    </li>
+                    <li><a href="/pages/terminosCondiciones.html">Terminos y Condiciones</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4>Lideres</h4>
+                <p>David Steven Niño</p>
+                <p>Melissa Saenz cruz</p>
+                <p>Álvaro Alfonso Rodríguez</p>
+            </div>
+            <div class="footer-column social-media">
+                <h4>Redes sociales</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#"><i class="fab fa-tiktok"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <p>© 2025 Mindbridge. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Mensaje de notificación -->
+    <div id="notification" class="notification" style="display: none">
+      <div class="notification-content">
+        <div class="notification-icon"></div>
+        <div class="notification-text">
+          <h4 class="notification-title"></h4>
+          <p class="notification-message"></p>
+        </div>
+        <button class="notification-close" onclick="hideNotification()">
+          ×
+        </button>
+      </div>
+    </div>
+
+    <script src="/js/auth.js"></script>
+    <script src="/js/accessibility.js"></script>
+  </body>
+</html>

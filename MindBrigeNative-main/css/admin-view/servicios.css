@@ -1,0 +1,330 @@
+/* HEADER */
+.log-header {
+  background-color: #0f2233;
+  padding: clamp(0.5rem, 1vw, 1.5rem);
+  display: flex;
+  justify-content: flex-end;
+}
+
+.log-header a {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  font-size: clamp(0.9rem, 1vw, 1.2rem);
+  padding-right: clamp(5px, 2%, 20px);
+  transition: all 0.2s ease-in;
+}
+
+.log-header a:hover {
+  text-decoration: underline;
+  transform: scale(1.02);
+}
+
+.main-admin {
+  margin-top: clamp(120px, 40vw, 180px) important;
+}
+
+/* SECCIÓN DE INFORMACIÓN */
+.info-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: clamp(20px, 5vw, 50px);
+  align-items: center;
+  padding: clamp(1rem, 3vw, 3rem);
+}
+
+@media (min-width: 768px) {
+  .info-section {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+/*INFO CONTAINER-------*/
+.info-container {
+  display: flex;
+  flex-direction: column;
+  width: clamp(80%, 45%, 50%);
+  padding: clamp(1rem, 5vw, 10%);
+  gap: clamp(5px, 2vw, 10px);
+}
+
+.info-container h1 {
+  color: #0f2233;
+  font-size: clamp(1.5rem, 4vw, 2.2rem);
+}
+
+.info-container h2 {
+  color: #1d3449;
+  font-weight: 700;
+  font-size: clamp(1rem, 2.5vw, 1.5rem);
+}
+
+.info-container ul,
+.info-container a {
+  font-family: "Open Sans", sans-serif;
+}
+
+.info-container ul {
+  font-size: clamp(0.8rem, 1.8vw, 1rem);
+}
+
+.info-container a {
+  color: #0f2233;
+  font-weight: 700;
+}
+
+.info-container a:hover {
+  text-decoration: underline;
+}
+
+/*IMG CONTAINER-------*/
+.img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(80%, 45%, 50%);
+  padding: clamp(1rem, 5vw, 10%);
+}
+
+.img-container img {
+  width: clamp(150px, 30vw, 350px);
+  height: auto;
+}
+
+
+/*AREA DE CRUD SERVICIOS-------*/
+.content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+/*LADO DERECHO FORMULARIO-------*/
+.services-form {
+  width: 50%;
+  padding: 4%;
+  box-sizing: border-box;
+}
+
+.services-cards {
+  width: 50%;
+  padding: 2%;
+  padding: 4%;
+  box-sizing: border-box;
+}
+
+.services-form,
+.services-cards {
+  flex: 1 1 clamp(300px, 48%, 600px); /* crece y se reduce según el espacio */
+  box-sizing: border-box; /*incluir border y padding en el tamaño total de su contenedor :)*/
+}
+
+.form-servicio {
+  background-color: #ffffff;
+  color: #1a2e41;
+  display: flex;
+  flex-direction: column;
+  margin: 5%;
+  padding: 5%;
+  border-radius: 30px;
+  gap: 13px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.342);
+  margin: 0 auto;
+}
+
+.services-form h1 {
+  font-size: clamp(20px, 2.5vw, 30px);
+  margin: 2% 0 5% 0;
+  color: #1a2e41;
+}
+
+.form-servicio label {
+  font-family: "Nunito", sans-serif;
+  font-weight: 700;
+}
+
+.form-servicio input,
+.form-servicio select,
+.form-servicio textarea {
+  border-radius: 15px; /* CAMBIO: unificado */
+  width: clamp(200px, 80%, 400px); /* CAMBIO: ancho relativo más flexible */
+  max-width: 100%;
+  align-self: flex-start; /* evita estiramiento */
+  font-family: "Open Sans", sans-serif;
+  padding: 10px;
+  border: 2px solid rgb(150, 150, 150);
+  transition: all 0.3s ease-in-out;
+  box-sizing: border-box; /* CAMBIO: incluye padding y border en width */
+}
+
+.form-servicio textarea {
+  height: clamp(80px, 15vh, 120px); /* CAMBIO: altura responsive */
+}
+
+.btn-form {
+  max-width: 100%;
+  align-self: flex-start;
+  width: clamp(200px, 50%, 400px);
+  background-color: #6aaefa;
+  color: #0f2233;
+  border: none;
+  padding: 0.8rem 1.5rem;
+  margin-top: 20px;
+  border-radius: 25px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  transition: all 0.3s ease-out;
+}
+
+.btn-form:hover {
+  transform: scale(1.05);
+  color: white;
+  background-color: #2c8fff;
+}
+
+.form-servicio input:focus,
+.form-servicio textarea:focus {
+  border: 2.5px solid #0075ff;
+  outline: none; /* quita el borde por defecto del navegador */
+}
+
+@media (max-width: 768px) {
+  .services-form,
+  .services-cards {
+    width: 100%;
+    flex: 1 1 100%; /*crecer encojerse tamaño inicial%*/
+  }
+  .form-servicio {
+    margin: 0 auto; /*centrarse*/
+    padding: clamp(15px, 5%, 25px); /*cambiar padding*/
+  }
+}
+
+/*LADO IZQUIERDO CARDS-------*/
+
+.lista-servicios h1 {
+  font-size: clamp(20px, 2.5vw, 30px);
+  margin: 2% 0 5% 0;
+  color: #1a2e41;
+}
+
+/*cards*/
+.servicio-card-2 {
+  display: flex;
+  flex-direction: row; /* imagen izquierda, contenido derecha */
+  background-color: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.342);
+  border-radius: 20px;
+  overflow: hidden; /* para que la imagen respete el border-radius */
+  margin: 15px 0;
+  width: 100%;
+  max-width: 100%;
+  transition: transform 0.3s ease;
+}
+
+.servicio-card-2:hover {
+  transform: scale(1.02);
+}
+
+/* Contenedor de la imagen */
+.img-conteiner-2 {
+  flex: 0 0 150px; /* ancho fijo de la imagen */
+  overflow: hidden;
+}
+
+.img-conteiner-2 img {
+  object-fit: cover; /* ocupa todo el espacio sin deformarse */
+  object-position: center;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Contenedor del contenido de la card */
+.content-card-container-2 {
+  flex: 1; /* ocupa todo el espacio restante */
+  padding: 15px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.content-card-container-2 h2 {
+  font-family: "Nunito", sans-serif;
+  color: #1a2e41;
+  font-size: clamp(18px, 2vw, 24px);
+  margin-bottom: 10px;
+}
+
+.content-card-container-2 ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 10px 0;
+  font-family: "Open Sans", sans-serif;
+  font-size: clamp(12px, 1.2vw, 16px);
+  color: #192b3d;
+}
+
+.acciones {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.acciones button {
+  border: none;
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+/* Botón azul editar */
+.btn-editar {
+  background-color: #6aaefa;
+  color: #0f2233;
+}
+
+.btn-editar:hover {
+  background-color: #2c8fff;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+/* Botón rojo eliminar */
+.btn-eliminar {
+  background-color: #ff6b6b;
+  color: #ffffff;
+}
+
+.btn-eliminar:hover {
+  background-color: #ff3b3b;
+  transform: scale(1.05);
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .servicio-card-2 {
+    flex-direction: column; /* imagen arriba, contenido abajo */
+    height: auto;
+  }
+
+  .img-conteiner-2 {
+    width: 100%;
+    height: 200px;
+  }
+
+  .content-card-container-2 {
+    padding: 10px 15px;
+  }
+
+  .acciones {
+    justify-content: flex-start;
+  }
+}

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrate ahora para poder publicar en nuestro blog</title>
+    <link rel="stylesheet" href="/css/autenticacionBlog.css">
+    <!--Nunito-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!--Open Sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+</head>
+<body>
+    
+    <!--mini header-->
+    <section class="mini-header">
+      <p>¿Quieres ser o ya eres uno de nuestros psicólogos?</p>
+      <a href="#">registrarse</a>
+      <a href="#">ingresar</a>
+    </section>
+
+    <!--header principal-->
+    <section class="header">
+      <img
+        class="logo"
+        src="../images/principal-page/logo.svg"
+        alt="MindBridge logo"
+      />
+      <nav class="navbar">
+        <input type="checkbox" id="menu-toogle" />
+        <label for="menu-toogle" class="menu-icon">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </label>
+        <ul class="header-links">
+          <li><a href="#inicio">inicio</a></li>
+          <li><a href="#nosotros">nosotros</a></li>
+          <li><a href="#centro-de-recursos">centro de recursos</a></li>
+          <li><a href="#calma-bot">calma bot</a></li>
+          <li><a href="#psicologos-para-ti">psicólogos para ti</a></li>
+          <li><a href="#lecturas">lecturas</a></li>
+          <li><a href="#psicologos-unidos">psicólogos unidos</a></li>
+        </ul>
+      </nav>
+    </section>
+    </header>
+<section class="contenedor-formulario">
+    <div class="contenedor-informacion">
+        <h2 class="titulo-principal">¡Únete a la comunidad! <strong class="color-principal">Regístrate y comparte</strong></h2>
+        <br>
+        <p class="texto-primario">Al unirte a nuestra comunidad, obtendrás acceso a un espacio seguro donde podrás publicar tus reflexiones y conectar con personas que, al igual que tú, buscan un camino hacia el bienestar. Tu perspectiva es valiosa, y al compartirla, contribuyes a un ambiente de apoyo y crecimiento mutuo.</p>
+        <br>
+        <p class="texto-secundario">Completa el formulario para unirte a nuestro grupo. Si te registras como visitante, tus publicaciones serán revisadas por un profesional de la página antes de ser publicadas, asegurando que cumplan con nuestras políticas de respeto y bienestar.</p>
+        <div class="imagen-triangle-purple">
+            <img src="../images/principal-page/triangle-purple.png" alt="calma-bot chat">
+        </div>
+    </div>
+    <div class="container-formulario">
+        <form id="auth-form" class="formulario">
+            <h2 id="form-title" class="titulo-principal">Formulario de registro</h2>
+            <!-- Campos del formulario -->
+            <div id="register-fields">
+                <div class="form-input-group">
+                    <label for="full-name" class="form-label">Nombre Completo</label>
+                    <input type="text" id="full-name" name="full-name" class="form-input" placeholder="Nombre y Apellido">
+                    <span id="full-name-error" class="error-message"></span>
+                </div>
+                <div class="form-input-group">
+                    <label for="phone-number" class="form-label">Número Telefónico</label>
+                    <input type="tel" id="phone-number" name="phone-number" class="form-input" placeholder="Ej. +57 300 1234567">
+                    <span id="phone-number-error" class="error-message"></span>
+                </div>
+                <div class="form-input-group">
+                    <label for="user-type" class="form-label">Tipo de Usuario</label>
+                    <select id="user-type" name="user-type" class="form-input form-select">
+                        <option value="psicologo">Psicólogo</option>
+                        <option value="visitante">Visitante</option>
+                    </select>
+                </div>
+                <!-- Checkbox dinámico para visitantes -->
+                <div id="visitor-checkbox-container" class="form-input-group" style="display: none;">
+                    <label class="checkbox-label text-sm">
+                        <input type="checkbox" id="visitor-policy" name="visitor-policy" class="checkbox-input">
+                        <span>Entiendo que, como usuario visitante, mis publicaciones serán revisadas por un profesional de la página antes de ser publicadas para asegurar que cumplen con las políticas de respeto y el espíritu de la comunidad.</span>
+                    </label>
+                    <span id="visitor-policy-error" class="error-message"></span>
+                </div>
+                <div class="form-input-group">
+                    <label for="age" class="form-label">Edad</label>
+                    <input type="number" id="age" name="age" min="1" max="150" class="form-input">
+                    <span id="age-error" class="error-message"></span>
+                </div>
+                <!-- Dropdown de Género -->
+                <div class="form-input-group">
+                    <label for="gender" class="form-label">Género</label>
+                    <select id="gender" name="gender" class="form-input form-select">
+                        <option value="escoge_una_opcion">Escoge una opción</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                    <span id="gender-error" class="error-message"></span>
+                </div>
+                <div class="form-input-group">
+                    <label for="occupation" class="form-label">¿A qué te dedicas?</label>
+                    <input type="text" id="occupation" name="occupation" class="form-input">
+                    <span id="occupation-error" class="error-message"></span>
+                </div>
+                <div class="form-input-group">
+                    <label for="motivation" class="form-label">¿Por qué quieres publicar en nuestro grupo?</label>
+                    <textarea id="motivation" name="motivation" rows="3" class="form-textarea"></textarea>
+                    <span id="motivation-error" class="error-message"></span>
+                </div>
+            </div>
+            
+            <!-- Campos de correo y contraseña (siempre visibles) -->
+            <div class="form-input-group">
+                <label for="email" class="form-label">Correo Electrónico</label>
+                <input type="email" id="email" name="email" class="form-input" placeholder="tu.correo@ejemplo.com">
+                <span id="email-error" class="error-message"></span>
+            </div>
+            <div id="password-fields">
+                <div class="form-input-group">
+                    <label for="password" class="form-label">Contraseña</label>
+                    <input type="password" id="password" name="password" class="form-input">
+                    <span id="password-error" class="error-message"></span>
+                </div>
+                <div id="password-repeat-field" class="form-input-group">
+                    <label for="password-repeat" class="form-label">Repetir Contraseña</label>
+                    <input type="password" id="password-repeat" name="password-repeat" class="form-input">
+                    <span id="password-repeat-error" class="error-message"></span>
+                </div>
+                <div id="terms-checkbox-container" class="form-input-group">
+                    <label class="checkbox-label text-sm">
+                        <input type="checkbox" id="terms-and-conditions" class="checkbox-input">
+                        <span>Acepto los <a href="#" class="color-principal font-bold">Términos y Condiciones</a>.</span>
+                    </label>
+                    <span id="terms-error" class="error-message"></span>
+                </div>
+            </div>
+            <button id="auth-button" type="submit" class="form-button">Registrarse</button>
+        </form>
+        <div id="message-container" class="mensaje-container"></div>
+    </div>
+</section>
+    <script type="module" src="../js/ControllerautenticacionBlog.js"></script>
+</body>
+</html>

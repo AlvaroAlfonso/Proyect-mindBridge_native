@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Psicólogos para ti</title>
+    <!--Nunito-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!--Open Sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <!--css-->
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body>
+    <!--HEADER-->
+    <header>
+      <!--mini header-->
+      <section class="mini-header">
+        <span class="mini-header-text"
+          >¿Quieres ser o ya eres uno de nuestros psicólogos?
+        </span>
+        <a href="/pages/registrarse.html">registrarse</a>
+        <a href="/pages/ingresar.html">ingresar</a>
+        <a href="./pages/admin-view/admin-intro.html">+</a>
+      </section>
+
+      <!--header principal-->
+      <section class="header">
+        <img
+          class="logo"
+          src="/images/principal-page/logo-png.png"
+          alt="MindBridge logo"
+        />
+        <nav class="navbar">
+          <input type="checkbox" id="menu-toogle" />
+          <label for="menu-toogle" class="menu-icon">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </label>
+          <ul class="header-links">
+            <li><a href="/index.html">inicio</a></li>
+            <li><a href="/index.html#nosotros">nosotros</a></li>
+            <li>
+              <a href="/index.html#centro-de-recursos">centro de recursos</a>
+            </li>
+            <li><a href="/index.html#calma-bot">calma bot</a></li>
+            <li><a href="/pages/psicologos.html">psicólogos para ti</a></li>
+            <li><a href="/index.html#lecturas">lecturas</a></li>
+            <li>
+              <a href="/index.html#psicologos-unidos">psicólogos unidos</a>
+            </li>
+            <li><a href="/pages/questions.html">Q&A</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+
+    <main class="psicologos-main">
+      <!--MIGAS DE PAN-->
+      <section class="migas-pan">
+        <div class="migas-container">
+          <a href="/index.html">página principal</a>
+          <span>></span>
+          <a href="/pages/psicologos.html">Psicólogos para</a>
+        </div>
+      </section>
+
+      <section class="accessibility-toolbar" aria-label="Accesibilidad">
+        <input type="radio" name="font-size" id="size-small" class="sr-only" />
+        <input
+          type="radio"
+          name="font-size"
+          id="size-normal"
+          class="sr-only"
+          checked
+        />
+        <input type="radio" name="font-size" id="size-large" class="sr-only" />
+        <input type="checkbox" id="high-contrast" class="sr-only" />
+        <div class="accessibility-controls">
+          <label
+            for="size-small"
+            class="acc-btn"
+            title="Disminuir letra"
+            aria-label="Disminuir letra"
+            >A-</label
+          >
+          <label
+            for="size-large"
+            class="acc-btn"
+            title="Aumentar letra"
+            aria-label="Aumentar letra"
+            >A+</label
+          >
+          <label
+            for="high-contrast"
+            class="acc-btn contrast"
+            title="Contraste"
+            aria-label="Cambiar contraste"
+          >
+            <span class="icon-sun" aria-hidden="true">☀️</span>
+            <span class="icon-moon" aria-hidden="true">🌙</span>
+          </label>
+        </div>
+      </section>
+
+      <!-- Header Section -->
+      <section class="psicologos-header">
+        <div class="header-icon">
+           <img src="/images/psicologos/happy-icon.webp" alt="happy-icon">
+        </div>
+        <h1>Psicólogos para ti</h1>
+        <p>
+          Encuentra psicólogos adaptados a tus necesidades, conoce sus
+          especialidades y modalidades de atención, y elige el acompañamiento
+          profesional que más te ayude a cuidar tu bienestar emocional.
+        </p>
+      </section>
+
+      <!-- Filter Section -->
+      <section class="filters-section">
+        <div class="filters-container">
+          <div class="filter-row">
+            <div class="filter-field">
+              <label for="ciudad">Ciudad</label>
+              <select id="ciudad" name="ciudad">
+                <option value="">Seleccionar ciudad</option>
+                <option value="bogota">Bogotá</option>
+                <option value="medellin">Medellín</option>
+                <option value="cali">Cali</option>
+              </select>
+            </div>
+            <div class="filter-field">
+              <label for="modalidad">Modalidad</label>
+              <select id="modalidad" name="modalidad">
+                <option value="">Seleccionar modalidad</option>
+                <option value="presencial">Presencial</option>
+                <option value="virtual">Virtual</option>
+                <option value="hibrido">Híbrido</option>
+              </select>
+            </div>
+          </div>
+          <div class="filter-row">
+            <div class="filter-field">
+              <label for="especialidad">Especialidad</label>
+              <select id="especialidad" name="especialidad">
+                <option value="">Seleccionar especialidad</option>
+                <option value="ansiedad">Ansiedad</option>
+                <option value="depresion">Depresión</option>
+                <option value="pareja">Terapia de pareja</option>
+                <option value="infantil">Psicología infantil</option>
+              </select>
+            </div>
+            <div class="filter-field">
+              <label for="especial">Atención Especial</label>
+              <select id="especial" name="especial">
+                <option value="">Seleccionar opción</option>
+                <option value="discapacidad-visual">Discapacidad visual</option>
+                <option value="discapacidad-auditiva">
+                  Discapacidad auditiva
+                </option>
+                <option value="discapacidad-motora">Discapacidad motora</option>
+                <option value="discapacidad-cognitiva">
+                  Discapacidad cognitiva
+                </option>
+                <option value="otras-discapacidades">
+                  Otras discapacidades
+                </option>
+              </select>
+            </div>
+          </div>
+          <div class="search-button-container">
+            <button type="button" class="btn-buscar" id="search-button">
+              BUSCAR
+            </button>
+            <button type="button" class="btn-limpiar" id="clear-button">
+              LIMPIAR
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- Initial Message -->
+      <div class="initial-message" id="initial-message">
+        <div class="message-content">
+          <h3>🔍 Selecciona tus criterios de búsqueda</h3>
+          <p>
+            Utiliza los filtros de arriba para encontrar psicólogos que se
+            adapten a tus necesidades específicas.
+          </p>
+          <p>
+            Puedes filtrar por ciudad, modalidad, especialidad y atención
+            especial.
+          </p>
+        </div>
+      </div>
+
+      <!-- Results Section -->
+      <section class="results-section" id="results-section">
+        <!-- Results Message -->
+        <div class="results-message" id="results-message">
+          <p>
+            <strong id="psychologists-quantity">0</strong> psicólogos
+            encontrados
+          </p>
+        </div>
+        <h2>Resultados</h2>
+        <div class="psychologists-grid" id="psychologists-grid">
+          <!-- Psychologist Card 1 -->
+          <div class="psychologist-card">
+            <h3>Dr. María González</h3>
+            <div class="rating">
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+            </div>
+            <div class="profile-picture">
+              <img
+                src="../images/psicologos/maria-fernandez.jpg"
+                alt="Dr. María González"
+                class="psychologist-photo"
+              />
+            </div>
+            <div class="psychologist-info">
+              <div class="info-item">
+                <strong>Especialidades:</strong>
+                <span>Ansiedad, Depresión, Terapia de pareja</span>
+              </div>
+              <div class="info-item">
+                <strong>Ciudad:</strong>
+                <span>Bogotá</span>
+              </div>
+              <div class="info-item">
+                <strong>Modalidad:</strong>
+                <span>Híbrido (presencial/virtual)</span>
+              </div>
+              <div class="info-item">
+                <strong>Costo:</strong>
+                <span>$60.000 por sesión</span>
+              </div>
+            </div>
+            <button
+              class="btn-ver-detalles"
+              onclick="openModal('maria-gonzalez')"
+            >
+              Ver detalles
+            </button>
+          </div>
+
+          <!-- Psychologist Card 2 -->
+          <div class="psychologist-card">
+            <h3>Dr. Carlos Rodríguez</h3>
+            <div class="rating">
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star">★</span>
+            </div>
+            <div class="profile-picture">
+              <img
+                src="../images/psicologos/carlos-rodriguez.jpg"
+                alt="Dr. Carlos Rodríguez"
+                class="psychologist-photo"
+              />
+            </div>
+            <div class="psychologist-info">
+              <div class="info-item">
+                <strong>Especialidades:</strong>
+                <span>Psicología infantil, TDAH, Terapia familiar</span>
+              </div>
+              <div class="info-item">
+                <strong>Ciudad:</strong>
+                <span>Medellín</span>
+              </div>
+              <div class="info-item">
+                <strong>Modalidad:</strong>
+                <span>Presencial</span>
+              </div>
+              <div class="info-item">
+                <strong>Costo:</strong>
+                <span>$45.000 por sesión</span>
+              </div>
+            </div>
+            <button
+              class="btn-ver-detalles"
+              onclick="openModal('carlos-rodriguez')"
+            >
+              Ver detalles
+            </button>
+          </div>
+
+          <!-- Psychologist Card 3 -->
+          <div class="psychologist-card">
+            <h3>Dra. Ana Martínez</h3>
+            <div class="rating">
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+            </div>
+            <div class="profile-picture">
+              <img
+                src="../images/psicologos/ana-gonzalez.jpg"
+                alt="Dra. Ana Martínez"
+                class="psychologist-photo"
+              />
+            </div>
+            <div class="psychologist-info">
+              <div class="info-item">
+                <strong>Especialidades:</strong>
+                <span>Trauma, EMDR, Terapia cognitivo-conductual</span>
+              </div>
+              <div class="info-item">
+                <strong>Ciudad:</strong>
+                <span>Bogotá</span>
+              </div>
+              <div class="info-item">
+                <strong>Modalidad:</strong>
+                <span>Virtual</span>
+              </div>
+              <div class="info-item">
+                <strong>Costo:</strong>
+                <span>$55.000 por sesión</span>
+              </div>
+            </div>
+            <button
+              class="btn-ver-detalles"
+              onclick="openModal('ana-martinez')"
+            >
+              Ver detalles
+            </button>
+          </div>
+
+          <!-- Psychologist Card 4 -->
+          <div class="psychologist-card">
+            <h3>Dr. Luis Fernández</h3>
+            <div class="rating">
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star">★</span>
+            </div>
+            <div class="profile-picture">
+              <img
+                src="../images/psicologos/luis-fernandez.jpg"
+                alt="Dr. Luis Fernández"
+                class="psychologist-photo"
+              />
+            </div>
+            <div class="psychologist-info">
+              <div class="info-item">
+                <strong>Especialidades:</strong>
+                <span>Adicciones, Terapia grupal, Mindfulness</span>
+              </div>
+              <div class="info-item">
+                <strong>Ciudad:</strong>
+                <span>Cali</span>
+              </div>
+              <div class="info-item">
+                <strong>Modalidad:</strong>
+                <span>Híbrido (presencial/virtual)</span>
+              </div>
+              <div class="info-item">
+                <strong>Costo:</strong>
+                <span>$50.000 por sesión</span>
+              </div>
+            </div>
+            <button
+              class="btn-ver-detalles"
+              onclick="openModal('luis-fernandez')"
+            >
+              Ver detalles
+            </button>
+          </div>
+
+          <!-- Psychologist Card 5 -->
+          <div class="psychologist-card">
+            <h3>Dra. Sofía Herrera</h3>
+            <div class="rating">
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+            </div>
+            <div class="profile-picture">
+              <img
+                src="../images/psicologos/sofia-herrera.jpg"
+                alt="Dra. Sofía Herrera"
+                class="psychologist-photo"
+              />
+            </div>
+            <div class="psychologist-info">
+              <div class="info-item">
+                <strong>Especialidades:</strong>
+                <span>Psicología perinatal, Duelo, Terapia de pareja</span>
+              </div>
+              <div class="info-item">
+                <strong>Ciudad:</strong>
+                <span>Bogotá</span>
+              </div>
+              <div class="info-item">
+                <strong>Modalidad:</strong>
+                <span>Presencial</span>
+              </div>
+              <div class="info-item">
+                <strong>Costo:</strong>
+                <span>$65.000 por sesión</span>
+              </div>
+            </div>
+            <button
+              class="btn-ver-detalles"
+              onclick="openModal('sofia-herrera')"
+            >
+              Ver detalles
+            </button>
+          </div>
+
+          <!-- Psychologist Card 6 -->
+          <div class="psychologist-card">
+            <h3>Dr. Miguel Torres</h3>
+            <div class="rating">
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star filled">★</span>
+              <span class="star">★</span>
+            </div>
+            <div class="profile-picture">
+              <img
+                src="../images/psicologos/luis-torres.jpg"
+                alt="Dr. Miguel Torres"
+                class="psychologist-photo"
+              />
+            </div>
+            <div class="psychologist-info">
+              <div class="info-item">
+                <strong>Especialidades:</strong>
+                <span>Terapia sexual, Ansiedad social, Autoestima</span>
+              </div>
+              <div class="info-item">
+                <strong>Ciudad:</strong>
+                <span>Medellín</span>
+              </div>
+              <div class="info-item">
+                <strong>Modalidad:</strong>
+                <span>Virtual</span>
+              </div>
+              <div class="info-item">
+                <strong>Costo:</strong>
+                <span>$40.000 por sesión</span>
+              </div>
+            </div>
+            <button
+              class="btn-ver-detalles"
+              onclick="openModal('miguel-torres')"
+            >
+              Ver detalles
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Modal para detalles del psicólogo -->
+    <div class="psychologist-modal" id="psychologist-modal">
+      <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <div class="modal-header">
+          <div class="modal-photo">
+            <img id="modal-photo" src="" alt="" class="psychologist-photo" />
+          </div>
+          <div class="modal-info">
+            <h2 id="modal-name"></h2>
+            <div class="modal-rating" id="modal-rating"></div>
+            <p class="modal-title" id="modal-title"></p>
+          </div>
+        </div>
+        <div class="modal-body">
+          <div class="modal-section">
+            <h3>Descripción Profesional</h3>
+            <p id="modal-description"></p>
+          </div>
+          <div class="modal-section">
+            <h3>Especialidades</h3>
+            <ul id="modal-specialties"></ul>
+          </div>
+          <div class="modal-section">
+            <h3>Información de Contacto</h3>
+            <div class="contact-info">
+              <div class="info-item">
+                <strong>Ciudad:</strong>
+                <span id="modal-city"></span>
+              </div>
+              <div class="info-item">
+                <strong>Modalidad:</strong>
+                <span id="modal-modality"></span>
+              </div>
+              <div class="info-item">
+                <strong>Costo:</strong>
+                <span id="modal-cost"></span>
+              </div>
+              <div class="info-item">
+                <strong>Experiencia:</strong>
+                <span id="modal-experience"></span>
+              </div>
+            </div>
+          </div>
+          <div class="modal-section">
+            <h3>Formación Académica</h3>
+            <p id="modal-education"></p>
+          </div>
+          <div class="modal-section">
+            <h3>Enfoque Terapéutico</h3>
+            <p id="modal-approach"></p>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button class="btn-contactar">Contactar</button>
+          <button class="btn-cerrar">Cerrar</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/psicologos-modal.js"></script>
+    <script src="/js/psicologos-search.js"></script>
+    <script src="/js/accessibility.js"></script>
+    
+  </body>
+</html>

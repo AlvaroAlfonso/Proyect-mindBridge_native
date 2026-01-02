@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MindBridge - psicología para todos</title>
+    <!--Nunito-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!--Open Sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <!--css-->
+    <link rel="stylesheet" href="./css/style.css" />
+    <!--icons-->
+    <script
+      src="https://kit.fontawesome.com/a0fe0f97f9.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <header>
+      <!--mini header-->
+      <section class="mini-header">
+        <span class="mini-header-text"
+          >¿Quieres ser o ya eres uno de nuestros psicólogos?
+        </span>
+        <a href="./pages/registrarse.html">registrarse</a>
+        <a href="./pages/ingresar.html">ingresar</a>
+        <a href="./pages/admin-view/admin-intro.html">+</a>
+      </section>
+
+      <!--header principal-->
+      <section class="header">
+        <img
+          class="logo"
+          src="./images/principal-page/logo-png.png"
+          alt="MindBridge logo"
+        />
+        <nav class="navbar">
+          <input type="checkbox" id="menu-toogle" />
+          <label for="menu-toogle" class="menu-icon">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </label>
+          <ul class="header-links">
+            <li><a href="#inicio">inicio</a></li>
+            <li><a href="#nosotros">nosotros</a></li>
+            <li><a href="#centro-de-recursos">centro de recursos</a></li>
+            <li><a href="#calma-bot">calma bot</a></li>
+            <li><a href="./pages/psicologos.html">psicólogos para ti</a></li>
+            <li><a href="#lecturas">lecturas</a></li>
+            <li><a href="#psicologos-unidos">psicólogos unidos</a></li>
+            <li><a href="./pages/questions.html">Q&A</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+
+    <!--contenido principal-->
+    <main>
+      <section class="hero" id="inicio">
+        <div class="hero-content">
+          <p>Psicología accesible y bienestar mental a un clic</p>
+          <h1>Bienvenido a</h1>
+          <h1>MindBridge</h1>
+        </div>
+      </section>
+
+      <section id="nosotros" class="nosotros">
+        <article class="nosotros-content">
+          <h2>
+            Un espacio seguro <br />
+            para tu salud mental
+          </h2>
+          <p>
+            Encuentra apoyo profesional, recursos gratuitos y herramientas
+            prácticas para cuidar tu salud mental en el mismo lugar.
+          </p>
+        </article>
+      </section>
+
+      <section class="quienes-somos">
+        <span class="titulo">¿Quienes somos?</span>
+        <article class="text-columnas">
+          <p>
+            En MindBridge trabajamos por la salud mental y el bienestar
+            emocional de las personas. Actualmente operamos en Colombia,
+            impulsando campañas de promoción y prevención de los trastornos
+            mentales.
+          </p>
+          <p>
+            A través de nuestra plataforma web brindamos recursos accesibles y
+            gratuitos que acompañan a la comunidad en la construcción de hábitos
+            saludables y en la búsqueda de apoyo oportuno.
+          </p>
+        </article>
+        <span class="ODS-tittle">Alineamos nuestra labor con los ODS</span>
+        <article class="ODS-container">
+          <img src="/images/principal-page/nosotros/ODS-3.webp" alt="ODS-3" />
+          <img src="/images/principal-page/nosotros/ODS-8.webp" alt="ODS-8" />
+        </article>
+      </section>
+
+      <!--action cards-->
+      <section id="action-cards" class="action-cards">
+        <h3>¿Que puedes hacer?</h3>
+
+        <div class="cards-container">
+          <article class="service-card">
+            <img
+              src="./images/principal-page/centro-de-recursos/terapy-card1.webp"
+              alt="conecta con psicólogos"
+            />
+            <h4>Conecta con Psicólogos</h4>
+            <p>
+              Habla con profesionales que te acompañan en un espacio seguro, con
+              opciones gratis y de bajo costo.
+            </p>
+            <a href="#" class="btn-explorar">Explorar</a>
+          </article>
+
+          <article class="service-card">
+            <img
+              src="./images/principal-page/centro-de-recursos/recursos-de-apoyo-card2.webp"
+              alt="servicios"
+            />
+            <h4>Recursos de apoyo</h4>
+            <p>
+              Encuentra líneas telefónicas, centros y programas gratuitos en
+              Colombia pensados para brindarte ayuda y acompañamiento.
+            </p>
+            <a href="./pages/servicios.html" class="btn-explorar">Explorar</a>
+          </article>
+
+          <article class="service-card">
+            <img
+              src="./images/principal-page/centro-de-recursos/lecturas-card2.webp"
+              alt="lecturas para tu bienestar"
+            />
+            <h4>Material para tu bienestar</h4>
+            <p>
+              Encuentra lecturas y guías que te ayudan a comprender lo que
+              sientes y cuidar tu salud mental
+            </p>
+            <a href="" class="btn-explorar">Explorar</a>
+          </article>
+        </div>
+      </section>
+
+      <!--centro de recursos-->
+      <section class="centro-de-recursos" id="centro-de-recursos">
+        <div class="titulo-centro-recursos">
+          <img
+            src="./images/principal-page/centros-section/house-icon.svg"
+            alt="house-icon"
+          />
+          <h3>Centro de recursos</h3>
+        </div>
+
+        <p>
+          En este espacio encontrarás universidades, líneas de ayuda y centros
+          especializados que ofrecen apoyo sin costo. Un lugar donde la
+          información confiable está siempre disponible.
+        </p>
+
+        <!--CARDS CENTRO DE RECURSOS -->
+        <template id="card-template">
+          <article class="info-card">
+            <img src="" alt="imagen del recurso" class="imagen-card" />
+            <h4 class="titulo"></h4>
+            <div class="card-description">
+              <ul>
+                <li class="origen"></li>
+                <li>Ciudad: <span class="ciudad"></span></li>
+                <li>Modalidad: <span class="modalidad"></span></li>
+                <li>Costo: <span class="costo"></span></li>
+              </ul>
+            </div>
+            <div class="btn-contenedor">
+              <a class="btn-azul" href="./pages/servicios.html">Ver detalles</a>
+            </div>
+          </article>
+        </template>
+
+        <section class="info-cards-container"></section>
+      </section>
+      <!--FIN CARDS CENTRO DE RECURSOS -------------------- -->
+
+      <!-- ChatBot Calma-->
+      <section class="container-ia" id="calma-bot">
+        <div class="container-texto">
+          <h2 class="titulo-ia">
+            Habla con <strong class="color-calmabot">Calma-Bot:</strong> Tu guía
+            emocional instantánea
+          </h2>
+          <br />
+          <p class="texto-primario">
+            Si las emociones te abruman, no estás solo.
+            <strong>Calmabot</strong> está listo para escucharte y darte un
+            inicio en tu camino hacia el equilibrio emocional. A través de un
+            diálogo guiado, te ofrece un espacio seguro para que puedas
+            desahogarte y expresar lo que sientes. Luego, te sugerirá ejercicios
+            y recursos diseñados para ayudarte a avanzar en tu proceso
+            emocional.
+          </p>
+          <p class="disclaimer">Aviso: este recurso no es un remplazo para la terapia real y humana, esta hecho para ayudarte en momentos de crisis.</p>
+          <br />
+          <p class="texto-secundario">
+            Escribe cómo te sientes y recibirás acciones que pueden ayudarte.
+          </p>
+          <div class="image-calma-bot">
+            <img
+              src="./images/principal-page/calma-bot2.webp"
+              alt="calma-bot chat"
+            />
+          </div>
+        </div>
+        <div class="container-bot">
+          <div class="chat-container">
+            <div class="chat-header">
+              <h3>Calma-Bot</h3>
+            </div>
+            <div class="chat-box" id="chatbox"></div>
+            <div class="chat-input-area">
+              <input
+                type="text"
+                id="userInput"
+                placeholder="Escribe tu respuesta..."
+              />
+              <button id="sendBtn">Enviar</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--Seccion de lecturas-->
+      <section class="lecturas" id="lecturas">
+        <div class="lecturas-container">
+          <h3>¿Quieres saber más sobre lo que sientes?</h3>
+          <p>
+            Lee artículos y recursos de psicología para entender tus emociones,
+            pensamientos y comportamientos y mantente informado sobre temas de
+            bienestar, desarrollo personal y salud mental.
+          </p>
+          <img src="./images/principal-page/lecturas/emotions.webp" alt="emotions-img"/>
+          <a href="/pages/blog.html">
+            <button class="btn-explorar">Explorar</button>
+          </a>
+      </section>
+
+      <!--Formulario-pqr-->
+      <section class="container-articulos">
+        <div class="contenedor-informacion">
+          <h2 class="titulo-principal">Tu Voz Construye el Puente: <strong class="color-principal"> Hablemos Claro y con Calma</strong></h2>
+            <br>
+              <p class="texto-primario">Si tienes una pregunta, una sugerencia para mejorar, una felicitación o una situación que necesite nuestra atención inmediata, este es el lugar. Cada comentario (Petición, Queja o Reclamo) es una oportunidad para fortalecer nuestra comunidad y pulir nuestro servicio.</p>
+              <br>
+              <p class="texto-secundario">Te aseguramos que leeremos y gestionaremos tu mensaje con la seriedad y el respeto que mereces. </p>
+            <div class="imagen-triangle-purple">
+              <img src="../images/principal-page/triangle-purple.png" alt="calma-bot chat">
+            </div>
+        </div>
+        <section class="container-formulario">
+            <!-- Formulario principal de autenticación -->
+          <form id="auth-form" class="formulario">
+          <h2 id="form-title" class="titulo-principal text-center">Formulario PQR</h2>
+
+          <div id="register-fields">
+          <div class="form-input-group">
+            <label for="full-name" class="form-label">Nombre y Apellido</label>
+            <input type="text" id="full-name" name="full-name"  class="form-input" placeholder="Nombre y Apellido">
+            <span class="error-message" data-field="full-name"></span>
+          </div>
+
+          <div class="form-input-group">
+            <label for="correo-electronico" class="form-label">Correo Electrónico</label>
+            <input type="email" id="correo-electronico" name="correo-electronico"  class="form-input" placeholder="correo@ejemplo.com">
+            <span class="error-message" data-field="correo-electronico"></span>
+          </div>
+
+          <div class="form-input-group">
+            <label for="phone-number" class="form-label">Número Telefónico</label>
+            <input type="text" id="phone-number" name="phone-number"  class="form-input" placeholder="Ej. 3001234567" maxlength="10">
+            <span class="error-message" data-field="phone-number"></span>
+        </div>
+
+        <div class="form-input-group">
+            <label for="motivation" class="form-label">Tu Mensaje (Petición, Queja o Reclamo)</label>
+            <textarea id="motivation" name="motivation" rows="5"  class="form-textarea" minlength="10" maxlength="800" placeholder="Escribe tu mensaje aquí..."></textarea>
+            <span class="error-message" data-field="motivation"></span>
+        </div>
+        </div>
+        <button id="auth-button" type="submit" class="form-button">Enviar mensaje</button>
+        </form>
+        </section>
+        </section>
+
+      <!-- seccion Psicologos Unidos-->
+      <section class="psicologos-unidos" id="psicologos-unidos">
+        <div class="contenido-psicologo">
+          <h3>Iniciativa Psicologos unidos</h3>
+          <p>
+            Si estás comenzando tu carrera o quieres que más personas conozcan
+            tus servicios, esta iniciativa te conecta con quienes buscan apoyo y
+            te ayuda a impulsar tu práctica mientras formas parte de una
+            comunidad que valora y apoya el talento emergente en psicología.
+          </p>
+          <br />
+          <p>inscríbete y únete a la comunidad de psicólogos.</p>
+          <button class="boton_psicologos">Inscribirme</button>
+        </div>
+        <div class="imagen-psicologos">
+          <img
+            src="./images/principal-page/psicologos-comunidad.png"
+            alt="comunidad-psicologos"
+          />
+        </div>
+      </section>
+    </main>
+    <script src="./js/main.js"></script>
+  </body>
+
+  <footer>
+      <div class="footer-container">
+        <div class="footer-column">
+          <h4>Datos de contacto</h4>
+          <p>Cra. 33A #30-20, Bogotá</p>
+          <p>(1) 234 5678</p>
+          <p>+57 3137737015</p>
+          <p>gestorprincipal@mindbridge.com</p>
+        </div>
+        <div class="footer-column">
+          <h4>Atajos</h4>
+          <ul>
+            <li><a href="./pages/servicios.html">Centro de recursos</a></li>
+            <li><a href="./pages/psicologos.html">Psicólogos para ti</a></li>
+            <li><a href="./pages/psicologos-unidos.html">Psicólogos unidos</a></li>
+            <li><a href="#">Lecturas</a></li>
+            <li><a href="/pages/questions.html">Preguntas frecuentes</a></li>
+            <li>
+              <a href="./pages/ingresar.html">Iniciar sesión</a>
+            </li>
+            <li><a href="./pages/terminosCondiciones.html">Terminos y Condiciones</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Lideres</h4>
+          <p>David Steven Niño</p>
+          <p>Melissa Saenz cruz</p>
+          <p>Álvaro Alfonso Rodríguez</p>
+        </div>
+        <div class="footer-column social-media">
+          <h4>Redes sociales</h4>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>© 2025 Mindbridge. Todos los derechos reservados.</p>
+      </div>
+  </footer>
+  
+    <script src="./js/main.js"></script>
+    <script type="module" src="./js/servicios-cards.js"></script>
+  </body>
+</html>

@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Psicólogos Unidos - MindBridge</title>
+    <!--Nunito-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!--Open Sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <!--css-->
+    <link rel="stylesheet" href="../css/style.css" />
+  </head>
+
+  <body>
+    <!--HEADER-->
+    <header>
+      <!--mini header-->
+      <section class="mini-header">
+        <span class="mini-header-text"
+          >¿Quieres ser o ya eres uno de nuestros psicólogos?
+        </span>
+        <a href="/pages/registrarse.html">registrarse</a>
+        <a href="/pages/ingresar.html">ingresar</a>
+        <a href="/pages/admin-view/admin-intro.html">+</a>
+      </section>
+
+      <!--header principal-->
+      <section class="header">
+        <img
+          class="logo"
+          src="/images/principal-page/logo-png.png"
+          alt="MindBridge logo"
+        />
+        <nav class="navbar">
+          <input type="checkbox" id="menu-toogle" />
+          <label for="menu-toogle" class="menu-icon">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </label>
+          <ul class="header-links">
+            <li><a href="/index.html">inicio</a></li>
+            <li><a href="/index.html#nosotros">nosotros</a></li>
+            <li>
+              <a href="/index.html#centro-de-recursos">centro de recursos</a>
+            </li>
+            <li><a href="/index.html#calma-bot">calma bot</a></li>
+            <li>
+              <a href="/pages/psicologos.html">psicólogos para ti</a>
+            </li>
+            <li><a href="/index.html#lecturas">lecturas</a></li>
+            <li>
+              <a href="/index.html#psicologos-unidos">psicólogos unidos</a>
+            </li>
+            <li><a href="/pages/questions.html">Q&A</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+
+    <main class="psicologos-unidos-main">
+
+      <!--MIGAS DE PAN-->
+      <section class="migas-pan">
+        <div class="migas-container">
+          <a href="/index.html">página principal</a>
+          <span>></span>
+          <a href="./psicologos-unidos.html">Psicólogos unidos</a>
+        </div>
+      </section>
+
+      <!-- Accesibilidad: tamaño de letra y contraste (sin JS) -->
+      <section class="accessibility-toolbar" aria-label="Accesibilidad">
+        <!-- Controles ocultos -->
+        <input type="radio" name="font-size" id="size-small" class="sr-only" />
+        <input
+          type="radio"
+          name="font-size"
+          id="size-normal"
+          class="sr-only"
+          checked
+        />
+        <input type="radio" name="font-size" id="size-large" class="sr-only" />
+        <input type="checkbox" id="high-contrast" class="sr-only" />
+
+        <!-- Botones visibles -->
+        <div class="accessibility-controls">
+          <label
+            for="size-small"
+            class="acc-btn"
+            title="Disminuir letra"
+            aria-label="Disminuir letra"
+            >A-</label
+          >
+          <label
+            for="size-large"
+            class="acc-btn"
+            title="Aumentar letra"
+            aria-label="Aumentar letra"
+            >A+</label
+          >
+          <label
+            for="high-contrast"
+            class="acc-btn contrast"
+            title="Contraste"
+            aria-label="Cambiar contraste"
+          >
+            <span class="icon-sun" aria-hidden="true">☀️</span>
+            <span class="icon-moon" aria-hidden="true">🌙</span>
+          </label>
+        </div>
+      </section>
+
+      <!-- Header Section -->
+      <section class="psicologos-unidos-header">
+        <div class="header-icon">
+          <svg
+            width="48"
+            height="48"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M16 4C18.2 4 20 5.8 20 8C20 10.2 18.2 12 16 12C13.8 12 12 10.2 12 8C12 5.8 13.8 4 16 4ZM16 14C12.7 14 4 15.3 4 18V20H28V18C28 15.3 19.3 14 16 14Z"
+              fill="#1A2E41"
+            />
+          </svg>
+        </div>
+        <h1>Psicólogos Unidos</h1>
+        <p>
+          Únete a nuestra red de profesionales y forma parte de una comunidad
+          que hace la psicología más accesible para todos. Ofrecemos precios
+          justos y oportunidades de crecimiento profesional.
+        </p>
+      </section>
+
+      <!-- Benefits Section -->
+      <section class="benefits-section">
+        <div class="benefits-container">
+          <h2>¿Por qué unirte a MindBridge?</h2>
+          <div class="benefits-grid">
+            <div class="benefit-card">
+              <div class="benefit-icon">
+                <svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z"
+                    fill="#A8D5BA"
+                  />
+                </svg>
+              </div>
+              <h3>Precios Accesibles</h3>
+              <p>
+                Ofrecemos tarifas más bajas para hacer la psicología accesible a
+                más personas, manteniendo la calidad profesional.
+              </p>
+            </div>
+            <div class="benefit-card">
+              <div class="benefit-icon">
+                <svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 2C13.1 2 14 2.9 14 4C14 5.1 13.1 6 12 6C10.9 6 10 5.1 10 4C10 2.9 10.9 2 12 2ZM21 9V7L15 7.5V9C15 10.1 14.1 11 13 11H11C9.9 11 9 10.1 9 9V7.5L3 7V9C3 10.1 3.9 11 5 11H7V22H9V16H15V22H17V11H19C20.1 11 21 10.1 21 9Z"
+                    fill="#6AAEFA"
+                  />
+                </svg>
+              </div>
+              <h3>Experiencia para Graduados</h3>
+              <p>
+                Perfecto para recién graduados que buscan ganar experiencia
+                clínica en un ambiente de apoyo y supervisión.
+              </p>
+            </div>
+            <div class="benefit-card">
+              <div class="benefit-icon">
+                <svg
+                  width="40"
+                  height="40"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M12 2L13.09 8.26L20 9L13.09 9.74L12 16L10.91 9.74L4 9L10.91 8.26L12 2Z"
+                    fill="#EEC767"
+                  />
+                </svg>
+
+              </div>
+              <h3>Flexibilidad Total</h3>
+              <p>
+                Trabaja desde casa o en consultorio, establece tus propios
+                horarios y modalidades de atención.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Pricing Section -->
+      <section class="pricing-section">
+        <div class="pricing-container">
+          <h2>Tarifas Accesibles</h2>
+          <p class="pricing-subtitle">
+            Hacemos la psicología accesible para todos
+          </p>
+          <div class="pricing-grid">
+            <div class="pricing-card">
+              <h3>Recién Graduados</h3>
+              <div class="price">
+                <span class="currency">$</span>
+                <span class="amount">25.000</span>
+                <span class="period">/sesión</span>
+              </div>
+              <ul class="features">
+                <li>✓ Supervisión incluida</li>
+                <li>✓ Capacitación básica</li>
+                <li>✓ Plataforma de gestión</li>
+                <li>✓ Soporte técnico</li>
+              </ul>
+              <button class="btn-join">Unirse</button>
+            </div>
+            <div class="pricing-card featured">
+              <div class="badge">Más Popular</div>
+              <h3>Psicólogos Experimentados</h3>
+              <div class="price">
+                <span class="currency">$</span>
+                <span class="amount">35.000</span>
+                <span class="period">/sesión</span>
+              </div>
+              <ul class="features">
+                <li>✓ Autonomía total</li>
+                <li>✓ Comisión del 70%</li>
+                <li>✓ Marketing incluido</li>
+                <li>✓ Herramientas avanzadas</li>
+              </ul>
+              <button class="btn-join">Unirse</button>
+            </div>
+            <div class="pricing-card">
+              <h3>Especialistas</h3>
+              <div class="price">
+                <span class="currency">$</span>
+                <span class="amount">45.000</span>
+                <span class="period">/sesión</span>
+              </div>
+              <ul class="features">
+                <li>✓ Tarifas premium</li>
+                <li>✓ Comisión del 80%</li>
+                <li>✓ Prioridad en búsquedas</li>
+                <li>✓ Consultoría especializada</li>
+              </ul>
+              <button class="btn-join">Unirse</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Registration Form -->
+      <section class="registration-section">
+        <div class="registration-container">
+          <h2>Únete a Nuestra Red</h2>
+          <p>
+            Completa el formulario y comienza a formar parte de nuestra
+            comunidad de psicólogos comprometidos con la accesibilidad.
+          </p>
+
+          <form class="registration-form" id="psychologist-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nombre">Nombre completo *</label>
+                <input
+                  type="text"
+                  id="nombre"
+                  name="nombre"
+                  required
+                  inputmode="text"
+                  autocomplete="name"
+                  minlength="3"
+                  maxlength="80"
+                  placeholder="Tu nombre"
+                  pattern="^[A-Za-z\s]*$"
+                  title="Escribe solo letras y espacios (mínimo 3 caracteres)"
+                />
+                <span class="msg msg-error"
+                  >Solo letras y espacios. Mínimo 3 caracteres.</span
+                >
+                <span class="msg msg-help">Ejemplo: Ana María Pérez</span>
+              </div>
+              <div class="form-group">
+                <label for="email">Correo electrónico *</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  autocomplete="email"
+                  title="Usa un correo válido (ej: nombre@dominio.com)"
+                />
+                <span class="msg msg-error">Escribe un correo válido.</span>
+                <span class="msg msg-help">Ejemplo: nombre@correo.com</span>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="telefono">Teléfono *</label>
+                <input
+                  type="tel"
+                  id="telefono"
+                  name="telefono"
+                  required
+                  inputmode="tel"
+                  autocomplete="tel"
+                  pattern="^[0-9]{10}$"
+                  placeholder="3001234567"
+                  title="Solo números. Exactamente 10 dígitos"
+                />
+                <span class="msg msg-error"
+                  >Solo números. Exactamente 10 dígitos.</span
+                >
+                <span class="msg msg-help">Ejemplo: 3001234567</span>
+              </div>
+              <div class="form-group">
+                <label for="ciudad">Ciudad *</label>
+                <select id="ciudad" name="ciudad" required>
+                  <option value="">Seleccionar ciudad</option>
+                  <option value="bogota">Bogotá</option>
+                  <option value="medellin">Medellín</option>
+                  <option value="cali">Cali</option>
+                  <option value="barranquilla">Barranquilla</option>
+                  <option value="otra">Otra</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="universidad">Universidad de graduación *</label>
+                <input
+                  type="text"
+                  id="universidad"
+                  name="universidad"
+                  required
+                  inputmode="text"
+                  minlength="3"
+                  maxlength="100"
+                  placeholder="Universidad"
+                  pattern="^[A-Za-z\s\.]*$"
+                  title="Solo letras y espacios. Puedes incluir puntos"
+                />
+                <span class="msg msg-error">Solo letras y espacios.</span>
+                <span class="msg msg-help">Ejemplo: Universidad Nacional</span>
+              </div>
+              <div class="form-group">
+                <label for="año_graduacion">Año de graduación *</label>
+                <input
+                  type="number"
+                  id="año_graduacion"
+                  name="año_graduacion"
+                  min="1990"
+                  max="2024"
+                  required
+                  title="Escribe un año entre 1990 y 2024"
+                />
+                <span class="msg msg-error">Entre 1990 y 2024.</span>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="especialidades"
+                >Especialidades (separadas por comas) *</label
+              >
+              <textarea
+                id="especialidades"
+                name="especialidades"
+                rows="3"
+                placeholder="Ej: Ansiedad, Depresión, Terapia de pareja"
+                required
+                aria-describedby="ayuda-especialidades"
+              ></textarea>
+              <span id="ayuda-especialidades" class="msg msg-help"
+                >Escribe al menos una especialidad, separa por comas.</span
+              >
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="modalidad">Modalidad de atención *</label>
+                <select id="modalidad" name="modalidad" required>
+                  <option value="">Seleccionar modalidad</option>
+                  <option value="presencial">Solo Presencial</option>
+                  <option value="virtual">Solo Virtual</option>
+                  <option value="hibrido">Híbrido (Presencial/Virtual)</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="experiencia">Años de experiencia *</label>
+                <select id="experiencia" name="experiencia" required>
+                  <option value="">Seleccionar experiencia</option>
+                  <option value="0-1">0-1 años (Recién graduado)</option>
+                  <option value="2-5">2-5 años</option>
+                  <option value="6-10">6-10 años</option>
+                  <option value="10+">Más de 10 años</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="tarifa_propuesta"
+                >Tarifa propuesta por sesión (COP) *</label
+              >
+              <input
+                type="number"
+                id="tarifa_propuesta"
+                name="tarifa_propuesta"
+                min="20000"
+                max="100000"
+                step="1000"
+                required
+                title="Entre $20.000 y $100.000"
+              />
+              <span class="msg msg-error">Entre $20.000 y $100.000.</span>
+            </div>
+
+            <div class="form-group">
+              <label for="disponibilidad">Disponibilidad horaria *</label>
+              <textarea
+                id="disponibilidad"
+                name="disponibilidad"
+                rows="2"
+                placeholder="Ej: Lunes a Viernes 8:00 AM - 6:00 PM"
+                required
+                aria-describedby="ayuda-disponibilidad"
+              ></textarea>
+              <span id="ayuda-disponibilidad" class="msg msg-help"
+                >Describe días y horas. Ej: Lun a Vie 8:00 AM - 6:00 PM</span
+              >
+            </div>
+
+            <div class="form-group">
+              <label for="motivacion"
+                >¿Por qué quieres unirte a MindBridge? *</label
+              >
+              <textarea
+                id="motivacion"
+                name="motivacion"
+                rows="4"
+                placeholder="Cuéntanos sobre tu motivación y cómo puedes contribuir a hacer la psicología más accesible"
+                required
+                minlength="30"
+                maxlength="600"
+                aria-describedby="ayuda-motivacion"
+              ></textarea>
+              <span id="ayuda-motivacion" class="msg msg-help"
+                >Mínimo 30 caracteres. Sé claro y concreto.</span
+              >
+            </div>
+
+            <div class="form-group checkbox-group">
+              <label class="checkbox-label">
+                <input type="checkbox" id="terminos" name="terminos" required />
+                <span class="checkmark"></span>
+                Acepto los términos y condiciones y la política de privacidad *
+              </label>
+            </div>
+
+            <button type="submit" class="btn-submit">Enviar Solicitud</button>
+          </form>
+        </div>
+      </section>
+
+      <!-- Success Message (Hidden by default) -->
+      <div class="success-message" id="success-message" style="display: none">
+        <div class="success-content">
+          <svg
+            width="48"
+            height="48"
+            viewBox="0 0 24 24"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M9 12L11 14L15 10M21 12C21 16.9706 16.9706 21 12 21C7.02944 21 3 16.9706 3 12C3 7.02944 7.02944 3 12 3C16.9706 3 21 7.02944 21 12Z"
+              stroke="#10B981"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            />
+          </svg>
+          <h3>¡Solicitud Enviada!</h3>
+          <p>
+            Hemos recibido tu solicitud. Te contactaremos en las próximas 48
+            horas para continuar con el proceso.
+          </p>
+        </div>
+      </div>
+    </main>
+
+    <script src="../js/psicologos-unidos.js"></script>
+    <script src="../js/accessibility.js"></script>
+  </body>
+</html>

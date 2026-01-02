@@ -1,0 +1,151 @@
+/* --- Variables de Color (Asegúrate de que coincidan con tu CSS principal) --- */
+:root {
+    --color-principal: #6c5ce7; /* Morado vibrante para acentos y títulos */
+    --color-secundario: #f8f8f8; /* Fondo de la página */
+    --color-texto-oscuro: #333;
+    --color-fondo-acordeon: #fff;
+    --color-borde-acordeon: #ddd;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    margin: 0;
+    background-color: #F7F8F9;
+}
+/* Estilos Generales de la Página de Términos */
+.terms-container {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: var(--color-secundario);
+    border-radius: 15px;
+}
+
+.main-title {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: 800;
+    margin-bottom: 10px;
+    color: var(--color-principal);
+    font-family: nunito;
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 1.1em;
+    color: var(--color-texto-oscuro);
+    margin-bottom: 40px;
+}
+
+/* --- Estilos del Acordeón --- */
+
+.accordion-wrapper {
+    border: 1px solid var(--color-borde-acordeon);
+    border-radius: 10px;
+    overflow: hidden; /* Para contener los bordes redondeados */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.accordion-item {
+    border-bottom: 1px solid var(--color-borde-acordeon);
+}
+
+.accordion-item:last-child {
+    border-bottom: none; /* Quitar el borde inferior del último ítem */
+}
+
+.accordion-header {
+    font-family:nunito;
+    width: 100%;
+    background-color: var(--color-fondo-acordeon);
+    color: var(--color-texto-oscuro);
+    padding: 15px 20px;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    position: relative;
+    user-select: none; /* Evita selección de texto al hacer click */
+}
+
+/* Efecto hover profesional */
+.accordion-header:hover {
+    background-color: #f4f4f8; /* Un gris muy suave */
+}
+
+/* Icono de flecha o signo de más/menos */
+.accordion-header::after {
+    content: '+';
+    position: absolute;
+    right: 20px;
+    font-size: 1.2em;
+    transition: transform 0.3s ease;
+    color: var(--color-principal);
+}
+
+/* Gira el icono cuando está activo */
+.accordion-header.active::after {
+    content: '-';
+    transform: rotate(0deg); /* Opcional, solo cambiar de + a - */
+}
+
+/* Estilos del Contenido Oculto */
+.accordion-content {
+    background-color: #ffffff; /* Fondo blanco */
+    padding: 0 20px;
+    max-height: 0; /* Inicialmente oculto */
+    overflow: hidden;
+    transition: max-height 0.4s ease-out, padding 0.4s ease-out; /* Transición suave */
+}
+
+.accordion-content p {
+    padding: 15px 0 20px 0; /* Espacio para el párrafo */
+    margin: 0;
+    line-height: 1.6;
+    color: #555;
+    border-top: 1px dashed #eee; /* Línea divisoria suave */
+}
+
+/* Estilo para el contenido cuando está abierto (manejado por JS) */
+.accordion-content.show {
+    max-height: 1000px; /* Un valor grande para asegurar que se muestre todo el contenido */
+    padding-top: 0;
+}
+
+
+/* --- Responsive (Asegurar buena visualización en móvil) --- */
+@media (max-width: 600px) {
+    .terms-container {
+        margin: 20px auto;
+        padding: 10px;
+    }
+    .main-title {
+        font-size: 1.8em;
+    }
+    .subtitle {
+        font-size: 1em;
+        margin-bottom: 20px;
+    }
+    .accordion-header {
+        padding: 15px 15px;
+        font-size: 1em;
+    }
+    .accordion-header::after {
+        right: 15px;
+    }
+    .accordion-content p {
+        padding: 10px 0 15px 0;
+        font-size: 0.95em;
+    }
+}

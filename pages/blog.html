@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <title>MindBridge - Articulos Revistas y Blog</title>
+    <!--Nunito-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <!--Open Sans-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <!--css-->
+    
+    <link rel="stylesheet" href="../css/blog.css"/>
+  </head>
+<body>
+    <header>
+
+    <!--mini header-->
+    <section class="mini-header">
+      <p>¿Quieres ser o ya eres uno de nuestros psicólogos?</p>
+      <a href="#">registrarse</a>
+      <a href="#">ingresar</a>
+    </section>
+
+    <!--header principal-->
+    <section class="header">
+      <img
+        class="logo"
+        src="../images/principal-page/logo.svg"
+        alt="MindBridge logo"
+      />
+      <nav class="navbar">
+        <input type="checkbox" id="menu-toogle" />
+        <label for="menu-toogle" class="menu-icon">
+          <div class="line"></div>
+          <div class="line"></div>
+          <div class="line"></div>
+        </label>
+        <ul class="header-links">
+          <li><a href="#inicio">inicio</a></li>
+          <li><a href="#nosotros">nosotros</a></li>
+          <li><a href="#centro-de-recursos">centro de recursos</a></li>
+          <li><a href="#calma-bot">calma bot</a></li>
+          <li><a href="#psicologos-para-ti">psicólogos para ti</a></li>
+          <li><a href="#lecturas">lecturas</a></li>
+          <li><a href="#psicologos-unidos">psicólogos unidos</a></li>
+        </ul>
+      </nav>
+    </section>
+    </header>
+<!-- Seccion formulario registro-->
+
+        <section class="container-articulos">
+        <div class="contenedor-informacion">
+            <h2 class="titulo-principal">¡Únete a la comunidad! <strong class="color-principal">Regístrate y comparte</strong></h2>
+            <br>
+            <p class="texto-primario">Al unirte a nuestra comunidad, obtendrás acceso a un espacio seguro donde podrás publicar tus reflexiones y conectar con personas que, al igual que tú, buscan un camino hacia el bienestar. Tu perspectiva es valiosa, y al compartirla, contribuyes a un ambiente de apoyo y crecimiento mutuo.</p>
+            <br>
+            <p class="texto-secundario">Completa el formulario para unirte a nuestro grupo. Si te registras como visitante, tus publicaciones serán revisadas por un profesional de la página antes de ser publicadas, asegurando que cumplan con nuestras políticas de respeto y bienestar.</p>
+            <div class="imagen-triangle-purple">
+                <img src="../images/principal-page/triangle-purple.png" alt="calma-bot chat">
+            </div>
+        </div>
+        <div class="container-formulario">
+            <!-- Formulario principal de autenticación -->
+            <form id="auth-form" class="formulario">
+                <h2 id="form-title" class="titulo-principal text-center">Login</h2>
+                <br>
+                <!-- Campos de correo y contraseña (siempre visibles) -->
+                <div class="form-input-group">
+                    <label for="email" class="form-label">Correo Electrónico</label>
+                    <input type="email" id="email" name="email" required class="form-input" placeholder="tu.correo@ejemplo.com">
+                </div>
+                <div id="password-fields">
+                    <div class="form-input-group">
+                        <label for="password" class="form-label">Contraseña</label>
+                        <input type="password" id="password" name="password" required class="form-input">
+                    </div>
+                    
+                    <div id="terms-checkbox-container" class="form-input-group">
+                        <label class="checkbox-label text-sm">
+                            <input type="checkbox" id="terms-and-conditions" class="checkbox-input" required>
+                            <span>Acepto los <a href="#" class="color-principal font-bold">Términos y Condiciones</a>.</span>
+                        </label>
+                    </div>
+                </div>
+                
+                <button id="auth-button" type="submit" class="form-button">Registrarse</button>
+                
+                <p id="form-toggle-link" class="text-center text-sm text-gray-600">
+                    ¿Ya tienes una cuenta? <span class="color-principal cursor-pointer font-bold">Iniciar Sesión</span>
+                </p>
+            </form>
+            <div id="message-container" class="mensaje-container"></div>
+        </div>
+    </section>
+         <!-- Fin formulario registro-->
+        <!-- Seccion Blog INICIAL-->
+      <section class="container-articulos">
+        <div class="contenedor-informacion">
+            <h2 class="titulo-principal">Escribe con el alma: <strong class="color-principal">Tu blog de bienestar</strong></h2>
+            <br>
+            <p class="texto-primario">Tu voz es un refugio para otros. En este espacio, puedes compartir tus reflexiones,
+                historias y aprendizajes sobre el camino hacia el equilibrio emocional. Al escribir, no
+                solo sanas tu propio proceso, sino que también ofreces una linterna a quienes
+                navegan en la oscuridad. Anímate a ser parte de nuestra comunidad y comparte tu
+                perspectiva.
+            </p>
+            <br>
+            <p class="texto-secundario">Completa el formulario y publica un artículo que inspire a nuestra comunidad.</p>
+            <div class="imagen-triangle-purple">
+                <img src="../images/principal-page/triangle-purple.png" alt="calma-bot chat">
+            </div>
+        </div>
+        <div class="container-formulario">
+            <form id="new-post-form" class="formulario">
+                <div class="form-input-group">
+                    <label for="post-title" class="form-label">Título del Artículo</label>
+                    <input type="text" id="post-title" name="title" required class="form-input">
+                    <span class="error-message" id="title-error"></span>
+                </div>
+                <div class="form-input-group">
+                    <label for="post-author" class="form-label">Tu Nombre</label>
+                    <input type="text" id="post-author" name="author" required class="form-input">
+                    <span class="error-message" id="title-error"></span>
+                </div>
+                <div class="form-input-group">
+                    <label for="post-image-url" class="form-label">URL de la Imagen</label>
+                    <input type="url" id="post-image-url" name="imageUrl" class="form-input">
+                    <span class="error-message" id="title-error"></span>
+                </div>
+                <div class="form-input-group">
+                    <label for="post-excerpt" class="form-label">Extracto Corto</label>
+                    <textarea id="post-excerpt" name="excerpt" rows="2" required class="form-textarea"></textarea>
+                    <span class="error-message" id="title-error"></span>
+                </div>
+                <div class="form-input-group">
+                    <label for="post-content" class="form-label">Contenido Completo</label>
+                    <textarea id="post-content" name="content" rows="6" required class="form-textarea"></textarea>
+                    <span class="error-message" id="title-error"></span>
+                </div>
+                <div class="form-input-group">
+                    <label for="post-category" class="form-label">Categoría</label>
+                    <select id="post-category" name="category" required class="form-input">
+                        <option value="últimos artículos">Últimos Artículos</option>
+                        <option value="salud emocional">Salud Emocional</option>
+                        <option value="desarrollo personal">Desarrollo Personal</option>
+                        <option value="psicólogos news">Psicólogos News</option>
+                    </select>
+                    <span class="error-message" id="category-error"></span>
+                </div>
+                <button type="submit" class="form-button">
+                    Publicar Artículo
+                </button>
+            </form>
+            <div id="message-container" class="mensaje-container">
+
+            </div>
+        </div>
+    </section>
+    <!--Fin Session blog-->
+
+    <!--Contenedor principal del blog-->
+    <main>
+    <div id="main-content">
+        <!-- Sección: Últimos Artículos -->
+        <section class="seccion-blog ultimos-articulos">
+            <h2 class="titulo-seccion">Últimos Artículos</h2>
+            <div id="latest-posts-container" class="grid-layout">
+                <!-- Las tarjetas se insertarán aquí dinámicamente -->
+            </div>
+        </section>
+
+        <!-- Sección: Salud Emocional -->
+        <section class="seccion-blog salud-emocional">
+            <h2 class="titulo-seccion">Salud Emocional</h2>
+            <div class="contenedor-carrusel">
+                <button id="scroll-left-btn" class="button-carrusel">&#10094;</button>
+                <div id="emotional-health-container" class="carousel-container">
+                    <!-- Las tarjetas se insertarán aquí dinámicamente -->
+                </div>
+                <button id="scroll-right-btn" class="button-carrusel">&#10095;</button>
+            </div>
+        </section>
+
+        <!-- Sección: Desarrollo Personal -->
+        <section class="seccion-blog desarrollo-personal">
+            <h2 class="titulo-seccion">Desarrollo Personal</h2>
+            <div id="personal-dev-container" class="grid-layout">
+                <!-- Las tarjetas se insertarán aquí dinámicamente -->
+            </div>
+        </section>
+
+        <!-- Sección: Psicólogos News -->
+        <section class="seccion-blog psicologos-news">
+            <h2 class="titulo-seccion">Psicólogos News</h2>
+            <div id="news-container" class="grid-layout">
+                <!-- Las tarjetas se insertarán aquí dinámicamente -->
+            </div>
+        </section>
+    </div>
+        
+    </main>
+    <script type="module" src="/js/blog.js"></script>
+    
+    
+
+</body>
+</html>

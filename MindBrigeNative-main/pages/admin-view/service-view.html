@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>service-view</title>
+    <link rel="stylesheet" href="/css/admin-view/servicios.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+
+  <body>
+    <!--HEADER-->
+    <header>
+      <section class="log-header">
+        <a href="/index.html">Cerrar sesión</a>
+      </section>
+      <!--header principal-->
+      <section class="header">
+        <img
+          class="logo"
+          src="/images/principal-page/logo-png.png"
+          alt="MindBridge logo"
+        />
+        <nav class="navbar">
+          <input type="checkbox" id="menu-toogle" />
+          <label for="menu-toogle" class="menu-icon">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </label>
+          <ul class="header-links">
+            <li><a href="./admin-intro.html">inicio</a></li>
+            <li><a href="./service-view.html">Servicios</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+
+    <main>
+      <!--MIGAS DE PAN-->
+      <section class="migas-pan">
+        <div class="migas-container">
+          <a href="./admin-intro.html">Inicio (admin)</a>
+          <span>></span>
+          <a href="./service-view.html">Servicios</a>
+        </div>
+      </section>
+
+      <section class="content">
+        <!--SECCION DEL FORMULARIO -->
+        <article class="services-form">
+          <h1>Crear o editar un Servicio</h1>
+          <form
+            class="form-servicio"
+            id="form-servicio"
+            enctype="multipart/form-data"
+          >
+            <input type="hidden" id="id-servicio" />
+            <!--el id oculto -->
+            <label for="nombre-servicio">Nombre del servicio: </label>
+            <input
+              type="text"
+              id="nombre-servicio"
+              placeholder="ingrese el nombre"
+            />
+
+            <label for="imagen-servicio">Subir Imágen: </label>
+            <input
+              type="file"
+              id="imagen-servicio"
+              class="btn-serv"
+              placeholder="suba la imagén aqui"
+            />
+
+            <label for="origen-servicio">Orígen del servicio: </label>
+            <input
+              type="text"
+              id="origen-servicio"
+              placeholder="ej: universidad, fundación, etc"
+            />
+
+            <label for="id-ciudad"> Ciudad de orígen: </label>
+            <select id="id-ciudad" required>
+              <option value="">Selecciona una ciudad</option>
+            </select>
+
+            <label for="id-modalidad">Seleccione la Modalidad: </label>
+            <select id="id-modalidad" required>
+              <option value="">Seleccione una modalidad:</option>
+            </select>
+
+            <label for="detalles-servicio">Detalles del servicio: </label>
+            <textarea
+              id="detalles-servicio"
+              placeholder="escriba aqui los detalles del servicio"
+            ></textarea>
+
+            <label for="numero-servicio"
+              >Número de contacto (si aplica)::
+            </label>
+            <input
+              type="text"
+              id="numero-servicio"
+              placeholder="ej: +00 000 0000"
+            />
+
+            <label for="correo-servicio"
+              >Correo de contacto (si aplica):
+            </label>
+            <input
+              type="text"
+              id="correo-servicio"
+              placeholder="ej: correo@gmail.com"
+            />
+
+            <label for="direccion-servicio">Dirección (si aplica): </label>
+            <input type="text" id="direccion-servicio" />
+
+            <label for="costo-servicio">Costo en COP: </label>
+            <input type="text" id="costo-servicio" />
+
+            <button class="btn-form">Guardar Servicio</button>
+          </form>
+        </article>
+
+        <!--SECCION DEL LAS CARDS -->
+        <article class="services-cards">
+          <template id="contenido-servicios">
+            <article class="servicio-card-2">
+              <div class="img-conteiner-2">
+                <img
+                  class="imagen-serv"
+                  id="imagen-serv"
+                  src=""
+                  alt="imagen del servicio"
+                />
+              </div>
+
+              <div class="content-card-container-2">
+                <h2><span id="nombre-serv"></span></h2>
+                <ul>
+                  <li>Id: <span id="id-serv"></span></li>
+                  <li>Origen: <span id="origen-serv"></span></li>
+                  <li>Ciudad: <span id="ciudad-serv"></span></li>
+                  <li>Modalidad: <span id="modalidad-serv"></span></li>
+                  <li>Detalles: <span id="detalles-serv"></span></li>
+                  <li>numero: <span id="numero-serv"></span></li>
+                  <li>correo: <span id="correo-serv"></span></li>
+                  <li>dirección: <span id="direccion-serv"></span></li>
+                  <li>Costo COP: <span id="costo-serv"></span></li>
+                </ul>
+                <section class="acciones" id="acciones">
+                  <button class="btn-editar" id="btn-editar">Editar</button>
+                  <button class="btn-eliminar" id="btn-eliminar">
+                    Eliminar
+                  </button>
+                </section>
+              </div>
+            </article>
+          </template>
+
+          <section class="lista-servicios" id="lista-servicios">
+            <h1>Servicios disponibles</h1>
+          </section>
+        </article>
+      </section>
+    </main>
+
+    <script type="module" src="/js/admin-view/principal.js"></script>
+  </body>
+</html>

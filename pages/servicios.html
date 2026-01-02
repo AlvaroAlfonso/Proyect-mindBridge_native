@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Servicios</title>
+    <!--header y footer (index)-->
+    <link rel="stylesheet" href="/css/style.css" />
+    <!--Iconos-->
+    <script
+      src="https://kit.fontawesome.com/a0fe0f97f9.js"
+      crossorigin="anonymous"
+    ></script>
+
+  </head>
+  <body>
+    <!--HEADER-->
+    <header>
+      <!--mini header-->
+      <section class="mini-header">
+        <span class="mini-header-text"
+          >¿Quieres ser o ya eres uno de nuestros psicólogos?
+        </span>
+        <a href="/pages/registrarse.html">registrarse</a>
+        <a href="/pages/ingresar.html">ingresar</a>
+        <a href="/pages/admin-view/admin-intro.html">+</a>
+      </section>
+
+      <!--header principal-->
+      <section class="header">
+        <img
+          class="logo"
+          src="/images/principal-page/logo-png.png"
+          alt="MindBridge logo"
+        />
+        <nav class="navbar">
+          <input type="checkbox" id="menu-toogle" />
+          <label for="menu-toogle" class="menu-icon">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </label>
+          <ul class="header-links">
+            <li><a href="/index.html">inicio</a></li>
+            <li><a href="/index.html#nosotros">nosotros</a></li>
+            <li>
+              <a href="/index.html#centro-de-recursos">centro de recursos</a>
+            </li>
+            <li><a href="/index.html#calma-bot">calma bot</a></li>
+            <li><a href="/pages/psicologos.html">psicólogos para ti</a></li>
+            <li><a href="#lecturas">lecturas</a></li>
+            <li>
+              <a href="/index.html#psicologos-unidos">psicólogos unidos</a>
+            </li>
+            <li><a href="./questions.html">Q&A</a></li>
+          </ul>
+        </nav>
+      </section>
+    </header>
+    <main>
+      <!--MIGAS DE PAN-->
+      <section class="migas-pan">
+        <div class="migas-container">
+          <a href="/index.html">página principal</a>
+          <span>></span>
+          <a href="./servicios.html">servicios</a>
+        </div>
+      </section>
+
+      <section class="intro-servicios">
+        <img src="/images/services/services-icon.svg" alt="services icon">
+        <h1>Bienvenido al centro de recursos</h1>
+        <p>
+          En este espacio puedes buscar universidades, líneas de apoyo y centros
+          especializados sin costo. Filtra según tu necesidad y encuentra la
+          ayuda que buscas de forma clara y confiable
+        </p>
+      </section>
+
+      <!--Carga de recursos-->
+      <section class="recursos-cards">
+        <!-- Template para las cards -->
+        <template id="contenido-servicios">
+          <article class="servicio-card">
+            <div class="img-conteiner">
+              <img
+                class="imagen-serv"
+                id="imagen-serv"
+                src=""
+                alt="imagen del servicio"
+              />
+            </div>
+
+            <div class="content-card-container">
+              <h2 class="nombre-serv"><span id="nombre-serv"></span></h2>
+              <ul>
+                <li class="id-serv">Id: <span id="id-serv"></span></li>
+                <li>Origen: <span id="origen-serv"></span></li>
+                <li>Ciudad: <span id="ciudad-serv"></span></li>
+                <li>Modalidad: <span id="modalidad-serv"></span></li>
+                <li>Detalles: <span id="detalles-serv"></span></li>
+                <li>número: <span id="numero-serv"></span></li>
+                <li>correo: <span id="correo-serv"></span></li>
+                <li>dirección: <span id="direccion-serv"></span></li>
+                <li>Costo (COP): <span id="costo-serv"></span></li>
+              </ul>
+              <section class="acciones" id="acciones">
+                <button class="btn-editar" id="btn-editar">Editar</button>
+                <button class="btn-eliminar" id="btn-eliminar">
+                  Eliminar
+                </button>
+              </section>
+            </div>
+          </article>
+        </template>
+
+        <!-- Contenedor donde se insertarán las cards - CON LA CLASE CORRECTA -->
+        <section class="lista-servicios cards-space" id="lista-servicios">
+          <!-- Las cards se generarán aquí dinámicamente -->
+        </section>
+      </section>
+    </main>
+    <!--FOOTER-->
+    <footer>
+      <div class="footer-container">
+        <div class="footer-column">
+          <h4>Datos de contacto</h4>
+          <p>Cra. 33A #30-20, Bogotá</p>
+          <p>(1) 234 5678</p>
+          <p>+57 3137737015</p>
+          <p>gestorprincipal@mindbridge.com</p>
+        </div>
+        <div class="footer-column">
+          <h4>Atajos</h4>
+          <ul>
+            <li><a href="./pages/servicios.html">Centro de recursos</a></li>
+            <li><a href="./pages/psicologos.html">Psicólogos para ti</a></li>
+            <li><a href="./psicologos-unidos.html">Psicólogos unidos</a></li>
+            <li><a href="/pages/questions.html">Preguntas frecuentes</a></li>
+            <li>
+              <a href="./pages/ingresar.html">Iniciar sesión</a>
+            </li>
+            <li><a href="/pages/terminosCondiciones.html">Terminos y Condiciones</a></li>
+          </ul>
+        </div>
+        <div class="footer-column">
+          <h4>Lideres</h4>
+          <p>David Steven Niño</p>
+          <p>Melissa Saenz cruz</p>
+          <p>Álvaro Alfonso Rodríguez</p>
+        </div>
+        <div class="footer-column social-media">
+          <h4>Redes sociales</h4>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-x-twitter"></i></a>
+            <a href="#"><i class="fab fa-tiktok"></i></a>
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <p>© 2025 Mindbridge. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+    <script type="module" src="/js/admin-view/principal.js"></script>
+  </body>
+</html>

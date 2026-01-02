@@ -1,0 +1,10 @@
+# Secretos y credenciales (IMPORTANTE)
+js/*.json
+MindBrigeNative-main/js/*.json
+.env
+
+# Dependencias de Node
+node_modules/
+
+# Configuración de editor
+.vscode/

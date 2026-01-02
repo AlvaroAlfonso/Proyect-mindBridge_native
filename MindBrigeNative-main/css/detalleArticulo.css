@@ -1,0 +1,90 @@
+ /* Estilos generales */
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #F0F4F8;
+            color: #1A2E41;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            min-height: 100vh;
+        }
+
+        .article-container {
+            width: 100%;
+            max-width: 900px;
+            background-color: #fff;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            margin: 40px 20px;
+        }
+        
+        /* Contenido del Artículo */
+        .article-title {
+            font-family: 'Nunito', sans-serif;
+            font-size: 48px;
+            font-weight: 800;
+            color: #1A2E41;
+            margin-bottom: 20px;
+            line-height: 1.2;
+            text-align: center;
+        }
+
+        .article-author-date {
+            font-size: 16px;
+            color: #7F52E8;
+            margin-bottom: 30px;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .article-image {
+            width: 100%;
+            height: auto;
+            max-height: 500px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin-bottom: 40px;
+        }
+
+        .article-content {
+            font-size: 18px;
+            line-height: 1.7;
+            color: #333;
+            text-align: justify;
+        }
+        
+        .article-content p {
+            margin-bottom: 1.5em;
+        }
+        
+        /* Mensaje de carga y error */
+        #loading-message, #error-message {
+            font-size: 24px;
+            color: #667280;
+            text-align: center;
+            margin-top: 50px;
+        }
+    
+        .button_atras{
+        width: 70%;
+        padding: 15px;
+        background-color: #7F52E8;
+        color: white;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        font-size: 18px;
+        font-weight: bold;
+        font-family: Nunito;
+        transition: background-color 0.3s ease;
+        margin-top: 20px;
+        
+    }
+    .lik-bottom{
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+    }
