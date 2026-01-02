@@ -1,7 +1,9 @@
 # MindBridge
-MindBridge con Agente de Inteligencia Artificial
-Tipo de proyecto:
-Aplicación web / Landing page interactiva
+MindBridge con Agente de Inteligencia Artificial <br>
+<br>
+Tipo de proyecto: <br>
+Aplicación web / Landing page interactiva <br>
+<br>
 
 Descripción del proyecto
 Landing page desarrollada para un servicio de psicología, orientada a evaluar el estado emocional del usuario mediante una experiencia interactiva. El objetivo del proyecto fue ofrecer una primera aproximación digital que guiara al usuario a través de preguntas estructuradas y generara una respuesta orientativa en tiempo real.
